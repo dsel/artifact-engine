@@ -1,4 +1,2 @@
-ae
-==
-
 Artifact Engine
+==
