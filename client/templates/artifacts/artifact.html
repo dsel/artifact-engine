@@ -1,0 +1,32 @@
+<template name="artifactItem">
+  <div class="artifact">
+    <div class="artifact-content row">  
+      <div class="col-xs-6 col-xs-offset-3">
+        <br>
+        <p class="phrase">{{phrase}}</p>
+        <br>
+        <p class="artifact-text">{{actor}} in a {{context}} world, {{verb}} with {{adjectiveWithArticle}} {{noun}}</p>
+        <br>
+        <p><button id="next">{{label}}</button></p>
+        <br>
+      </div>
+    </div>
+    <div class="purple-bar row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <h4>This future is randomly generated based on the following signals:</h4>
+      </div>
+    </div>
+    <div class="signals row">
+      <div class="col-xs-6 col-xs-offset-3">
+      {{> signalItemShort one }}
+      {{> signalItemShort two }}
+      {{> signalItemShort three }}
+    </div>
+    </div>
+  </div>
+        <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="{{pathFor 'signalAdd'}}">+ Add Signal</a></li>
+        </ul>
+      </div>
+</template>

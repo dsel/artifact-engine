@@ -1,0 +1,62 @@
+<template name="signalAdd">
+<div class="row">
+<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+  <br>
+  <h1>Share A New Signal</h1>
+  <br>
+  <form id="signalForm" class="main form">
+    <div class="form-group col-sm-5 col-xs-12" >
+      <label class="control-label" for="title">Signal Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group col-sm-7 col-xs-12" >
+      <label class="control-label" for="title">Image URL</label>
+      <div class="controls">
+          <input name="image" id="image" type="text" value="" placeholder="" class="form-control"/>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-12 col-sm-5">
+      <label class="control-label" for="description">Description</label>
+      <div class="controls">
+           <textarea type="text" name="description" id="description" rows=9 value="" placeholder="" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="form-group col-sm-7 col-xs-12" >
+      <label class="control-label" for="title">Source URL</label>
+      <div class="controls">
+          <input name="source" id="source" type="text" value="" placeholder="" class="form-control"/>
+      </div>
+      <br>
+      <div class="col-xs-12"><h1>Words For The Artifact Engine<br><br></h1></div>
+
+      <div class="form-group col-sm-3 col-xs-12" >
+        <label class="control-label col-xs-4 col-sm-12" for="title">Verb</label>
+        <div class="controls col-xs-8 col-sm-12">
+            <input name="verb" id="verb" type="text" value="" placeholder="" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs with-a" ><br> with a(n) </div>
+      <div class="col-xs-8 col-xs-offset-4 visible-xs with-a" > &nbsp; with a(n) <br><br> </div>
+       <div class="form-group col-sm-3 col-xs-12" >
+        <label class="control-label col-xs-4 col-sm-12" for="title">Adjective</label>
+        <div class="controls col-xs-8 col-sm-12">
+            <input name="adjective" id="adjective" type="text" value="" placeholder="" class="form-control"/>
+        </div>
+      </div>
+       <div class="form-group col-sm-3 col-xs-12" >
+        <label class="control-label col-xs-4 col-sm-12" for="title">Noun</label>
+        <div class="controls col-xs-8 col-sm-12">
+            <input name="noun" id="noun" type="text" value="" placeholder="" class="form-control"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 form-group">
+      <input type="submit" value="Share Signal" class="btn btn-primary"/>
+    </div>
+  </form>
+  </div>
+  </div>
+</template>

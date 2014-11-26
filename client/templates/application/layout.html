@@ -1,0 +1,16 @@
+<template name="layout">
+  <div class="container-fluid">
+    <div id="header" class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <p><a href="/"><img src="/img/logo.png" width=50 height=40> ARTIFACT ENGINE</a></p>
+      </div>
+
+    </div>
+    <div id="main" class="row">
+      <div class="pull-left col-xs-3">
+       <br>{{flash}}
+      </div>
+      {{> yield}}
+    </div>
+  </div>
+</template>
